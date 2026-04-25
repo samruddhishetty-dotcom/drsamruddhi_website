@@ -244,7 +244,180 @@ gap:12px;
 }
 
 }
+.publications-section{
+background: linear-gradient(180deg,#fafbff,#f4f7ff);
+}
 
+.publication-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:32px;
+margin-top:50px;
+}
+
+.publication-card{
+background:white;
+padding:35px;
+border-radius:28px;
+box-shadow:0 12px 40px rgba(0,0,0,.08);
+transition:.35s ease;
+border:1px solid #e8ecff;
+}
+
+.publication-card:hover{
+transform:translateY(-10px);
+box-shadow:0 18px 50px rgba(0,0,0,.12);
+}
+
+.pub-icon{
+width:70px;
+height:70px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:32px;
+background:#eef2ff;
+margin-bottom:20px;
+}
+
+.pub-badge{
+display:inline-block;
+padding:8px 14px;
+border-radius:30px;
+background:#f3f0ff;
+font-size:13px;
+font-weight:600;
+margin-bottom:15px;
+}
+
+.pub-btn{
+display:inline-block;
+margin-top:20px;
+padding:14px 24px;
+border:2px solid #4f46e5;   /* proper border added */
+border-radius:14px;
+text-decoration:none;
+font-weight:600;
+color:#4f46e5;
+transition:.3s;
+}
+
+.pub-btn:hover{
+background:#4f46e5;
+color:white;
+}
+.publication-btn{
+background:#FFF8E6;
+border:2px solid #C58B00;
+color:#8A5A00;
+}
+
+.publication-btn:hover{
+background:#C58B00;
+color:#fff;
+}
+
+#publications{
+background: linear-gradient(180deg,#ffffff 0%, #f8fbff 100%);
+}
+
+.publication-panel{
+max-width:950px;
+margin:60px auto 0;
+display:flex;
+flex-direction:column;
+gap:28px;
+}
+
+.publication-item{
+background:#ffffff;
+padding:34px;
+border-radius:24px;
+border:1px solid rgba(197,139,0,.18);
+box-shadow:0 12px 35px rgba(20,30,60,.06);
+transition:all .35s ease;
+position:relative;
+overflow:hidden;
+}
+
+.publication-item:before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+width:6px;
+height:100%;
+background:linear-gradient(#C58B00,#E0B84A);
+}
+
+.publication-item:hover{
+transform:translateY(-8px);
+box-shadow:0 18px 45px rgba(20,30,60,.12);
+}
+
+.pub-meta{
+display:inline-block;
+padding:8px 16px;
+border-radius:30px;
+background:rgba(197,139,0,.10);
+color:#8A5A00;
+font-size:14px;
+font-weight:700;
+letter-spacing:.4px;
+margin-bottom:18px;
+}
+
+.publication-item h3{
+font-size:1.35rem;
+line-height:1.55;
+margin:0 0 14px;
+color:#1c2740;
+font-weight:700;
+}
+
+.authors{
+margin:0 0 8px;
+font-weight:600;
+color:#3d4a63;
+}
+
+.journal{
+margin:0;
+font-style:italic;
+color:#64748b;
+line-height:1.7;
+}
+
+.pub-link-btn{
+display:inline-block;
+margin-top:15px;
+padding:14px 24px;
+border:2px solid #C58B00;
+border-radius:14px;
+background:#FFF8E6;
+color:#8A5A00;
+font-weight:700;
+text-decoration:none;
+transition:.3s ease;
+}
+
+.pub-link-btn:hover{
+background:#C58B00;
+color:#fff;
+box-shadow:0 8px 20px rgba(197,139,0,.28);
+}
+
+@media(max-width:768px){
+.publication-item{
+padding:26px;
+border-radius:18px;
+}
+
+.publication-item h3{
+font-size:1.15rem;
+}
+}
 </style>
 </head>
 
@@ -283,8 +456,8 @@ banking, analytics, agile delivery and intelligent systems innovation.
 
 <a href="#contact" class="btn primary">Connect</a>
 
-<a href="https://www.linkedin.com/in/drsamruddhishetty/" class="btn secondary">
-LinkedIn
+<a href="#publications" class="btn publication-btn">
+  📚 Publications
 </a>
 
 </div>
@@ -361,12 +534,6 @@ Behavioral modeling, empirical analysis and research frameworks.
 
 </section>
 
-
-
-
-
-
-
 <section id="experience" class="fade">
 
 <h2>Professional Experience</h2>
@@ -389,6 +556,84 @@ Datamatics • NSE IT • IBIS Systems • Kite Interactive
 </section>
 
 <section id="research" class="fade">
+
+
+<section id="publications" class="section">
+  <div class="container">
+
+    <div class="section-title">
+      <h2>Selected Publications</h2>
+      <p>
+        Research contributions in Artificial Intelligence, Agile Project Management,
+        Cloud Computing and Emerging Technologies.
+      </p>
+    </div>
+
+    <div class="publication-panel">
+
+      <div class="publication-item">
+        <div class="pub-meta">2024</div>
+        <h3>Shifting from Red AI To Green AI</h3>
+        <p class="authors">
+          S. Shetty, N. Joshi, A. Banubakode
+        </p>
+        <p class="journal">
+          <em>Artificial Intelligence, Machine Learning and User Interface Design</em>, pp. 191–209
+        </p>
+      </div>
+
+
+      <div class="publication-item">
+        <div class="pub-meta">2025</div>
+        <h3>Study on Impact of COVID-19 Pandemic on Implementation of Agile Project Management</h3>
+        <p class="authors">
+          S. Shetty, N. Joshi
+        </p>
+        <p class="journal">
+          <em>Journal of Development Research</em>, 17(1), 145
+        </p>
+      </div>
+
+
+      <div class="publication-item">
+        <div class="pub-meta">2024</div>
+        <h3>A Bibliometric Analysis of Research Papers Related to AI-powered Agile Project Adoption by Extending UTAUT</h3>
+        <p class="authors">
+           S. Shetty, N. Joshi
+        </p>
+        <p class="journal">
+          <em>International Journal For Multidisciplinary Research</em>, 6(4)
+        </p>
+      </div>
+
+
+      <div class="publication-item">
+        <div class="pub-meta">2019</div>
+        <h3>To Study Disruption by Cloud Computing in IT Service Industry</h3>
+        <p class="authors">
+          S. Shetty, S. Kelkar
+        </p>
+        <p class="journal">
+          <em>Volume 4, Issue 9 (September)</em>
+        </p>
+      </div>
+
+
+      <div style="text-align:center; margin-top:35px;">
+        <a href="https://scholar.google.com/citations?user=mYp-CA0AAAAJ&hl=en"
+           target="_blank"
+           class="pub-link-btn">
+           📚 View Full Google Scholar Profile
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
 
 <h2>Research Themes</h2>
 
@@ -462,9 +707,15 @@ Datamatics • NSE IT • IBIS Systems • Kite Interactive
 
 <h2 style="color:white;">Let's Connect</h2>
 
-<p style="font-size:22px;">
-📧 samruddhishetty@gmail.com
-</p>
+<div class="email-box">  
+
+   <div class="email-content">
+      <span class="email-label">✉</span>
+      <a href="mailto:samruddhishetty@gmail.com" style="color:white;font-weight:600;text-decoration:none;" class="email-link">
+        samruddhishetty@gmail.com
+      </a>
+   </div>
+</div>
 
 <p style="margin-top:20px;">
 🔗

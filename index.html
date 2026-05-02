@@ -467,7 +467,7 @@ opacity:1;
 
 .education-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 25px;
 }
 
@@ -537,6 +537,11 @@ opacity:1;
     grid-template-columns: 1fr;
   }
 }
+.icon i {
+  width: 32px;
+  height: 32px;
+  color: #7b5cff;
+}
 </style>
 </head>
 
@@ -594,8 +599,7 @@ font-weight:bold;
 </a>
 </p>
 <p>
-PhD researcher, Senior Business Analyst, and consultant with 15+ years across
-banking, analytics, agile delivery and intelligent systems innovation.
+Senior Business Analyst, Researcher, and Consultant with 15+ years across banking, analytics, agile delivery, and intelligent systems innovation.
 </p>
 <a href="#contact" class="btn primary">Connect</a>
 
@@ -859,10 +863,25 @@ Datamatics • NSE IT • IBIS Systems • Kite Interactive
  <h2>Education</h2>
 
   <div class="education-grid">
+  
+      <!-- PhD -->
+  
+   <div class="edu-card">
+ <div class="icon">
+  <i data-lucide="brain-circuit"></i>
+</div>
+      <h3>PhD - Management Studies (AI & Agile)</h3>
+      <p class="uni">🏫 University of Mumbai</p>
+      <p>MET IOM(Mumbai Education Trust) Bandra</p>
+      <div class="badge">Awarded</div>
+      <span>2021 – 2026</span>
+    </div>
 
     <!-- MBA -->
     <div class="edu-card">
-      <div class="icon">🎓</div>
+     <div class="icon">
+  <i data-lucide="briefcase"></i>
+</div>
       <h3>MBA - Information Management</h3>
       <p class="uni">🏫 University of Mumbai</p>
       <p>Welingkar Institute of Management</p>
@@ -872,7 +891,9 @@ Datamatics • NSE IT • IBIS Systems • Kite Interactive
 
     <!-- MSc IT -->
     <div class="edu-card">
-      <div class="icon">💻</div>
+    <div class="icon">
+  <i data-lucide="laptop"></i>
+</div>
       <h3>M.Sc. Information Technology</h3>
       <p class="uni">🏫 University of Mumbai</p>
       <p>Patkar Varde College</p>
@@ -882,7 +903,9 @@ Datamatics • NSE IT • IBIS Systems • Kite Interactive
 
     <!-- BSc IT -->
     <div class="edu-card highlight">
-      <div class="icon">💻</div>
+      <div class="icon">
+  <i data-lucide="cpu"></i>
+</div>
       <h3>B.Sc. Information Technology</h3>
       <p class="uni">🏫 University of Mumbai</p>
       <p>Patkar Varde College</p>
@@ -937,6 +960,9 @@ entry.target.classList.add('show');
 
 document.querySelectorAll('.fade').forEach(el=>observer.observe(el));
 </script>
-
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
 </body>
 </html>

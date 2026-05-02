@@ -453,6 +453,90 @@ opacity:.65;
 .publication-item h3 a:hover .link-arrow{
 opacity:1;
 }
+
+.education-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.education-section h2 {
+  font-size: 36px;
+  color: #2e1f47;
+  margin-bottom: 40px;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.edu-card {
+  background: #f4f3f7;
+  border-radius: 20px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.edu-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #2e1f47;
+}
+
+.uni {
+  font-size: 13px;
+  color: #6b5c8f;
+  margin-bottom: 5px;
+}
+
+.edu-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.badge {
+  display: inline-block;
+  background: #e8e4f3;
+  color: #3d2c6c;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.badge.strong {
+  background: #dcd4ff;
+  font-weight: 600;
+}
+
+.edu-card span {
+  font-size: 12px;
+  color: #888;
+}
+
+/* Highlight best score */
+.edu-card.highlight {
+  border: 1px solid #dcd4ff;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
 </head>
 
@@ -472,7 +556,7 @@ Dr. Samruddhi Shetty
 <a href="#experience">Experience</a>
 <a href="#research">Research</a>
 <a href="#certifications">Certifications</a>
-<a href="#contact">Contact</a>
+<a href="#educations">Education</a><a href="#contact">Contact</a>
 </div>
 </nav>
 
@@ -723,6 +807,8 @@ Datamatics • NSE IT • IBIS Systems • Kite Interactive
 
 <section id="certifications" class="fade">
 
+ 
+
 <h2>Certifications</h2>
 
 <div class="cert">
@@ -765,6 +851,46 @@ Datamatics • NSE IT • IBIS Systems • Kite Interactive
 
 </div>
 
+</section>
+
+
+
+<section id="educations" class="education-section">
+ <h2>Education</h2>
+
+  <div class="education-grid">
+
+    <!-- MBA -->
+    <div class="edu-card">
+      <div class="icon">🎓</div>
+      <h3>MBA - Information Management</h3>
+      <p class="uni">🏫 University of Mumbai</p>
+      <p>Welingkar Institute of Management</p>
+      <div class="badge">O Grade | 6.5 CGPA / 7</div>
+      <span>2016 – 2019</span>
+    </div>
+
+    <!-- MSc IT -->
+    <div class="edu-card">
+      <div class="icon">💻</div>
+      <h3>M.Sc. Information Technology</h3>
+      <p class="uni">🏫 University of Mumbai</p>
+      <p>Patkar Varde College</p>
+      <div class="badge">First Class</div>
+      <span>2009 – 2011</span>
+    </div>
+
+    <!-- BSc IT -->
+    <div class="edu-card highlight">
+      <div class="icon">💻</div>
+      <h3>B.Sc. Information Technology</h3>
+      <p class="uni">🏫 University of Mumbai</p>
+      <p>Patkar Varde College</p>
+      <div class="badge strong">80.19% • Distinction</div>
+      <span>2006 – 2009</span>
+    </div>
+
+  </div>
 </section>
 
 <section id="contact" class="fade">
